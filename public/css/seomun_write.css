@@ -1,0 +1,93 @@
+
+.sec_write {
+    width: 86.6425992%;
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 200px;
+}
+.write_form {
+    width: 100%;
+}
+.sec_write h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 30px;
+}
+.write_form table {
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+td {
+    padding: 20px 10px;
+    border: 1px solid #fff;
+}
+
+.write_subject input {
+    width: 70%;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.write_login input {
+    width: 70%;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.write_date input {
+    width: 30%;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.write_content textarea {
+    width: 80%;
+    height: 50vmin;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.write_save input {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.write_save td:last-child input {
+    width: 23%;
+} 
+.write_subject>td:first-child {
+    text-align: center;
+}
+.write_login>td:first-child, .login>td:nth-child(3) {
+    text-align: center;
+}
+.write_date>td:first-child {
+    text-align: center;
+}
+.write_content>td:first-child {
+    text-align: center;
+}
+.write_save>td:first-child {
+    text-align: center;
+}
+
+@media screen and (max-width: 720px) { 
+    main {
+        padding-top: 0px;
+    }
+    .write_form label {
+        font-size: 14px;
+    }
+    td {
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+    .sec_write {
+        padding-top: 50px;
+    }
+
+}

@@ -1,0 +1,69 @@
+<% if(typeof errs !== 'undefined'){ %>
+    <% errs.forEach(() =>{ %>
+        <h3><%= err.param %> : <%= err.msg %></h3>
+    <% }) %>
+<%}%>
+    <div class="viewback_img mobile_none"></div>
+    <section class="sec_view">
+        <div class="view_top">
+            
+            <h1><%= row.subject %></h1>
+            <div>
+                <p>작성일</p>
+                <span><%= row.date %></span>
+                <p class="view_bar">|</p>
+                <p>작성자</p>
+                <span><%= row.author %></span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="sec_view">
+        <div class="view_mid">
+            <div class="view_contents" style="white-space: pre-line;">
+                <%= row.content %>
+                
+            <!-- <div class="uploaded_files">
+                <a href="" download="">첨부.서문칠성야시장 매대운영자 모집 공고.hwp</a>
+                <a href="" download="">첨부.음식 매대운영자 모집 신청서.hwp</a>
+                <a href="" download="">첨부.야시장 프리마켓 신청서.hwp</a>
+                <a href="" download="">첨부.야시장 대학매대 신청서.hwp</a>
+            </div> -->
+        </div>
+    </section>
+    <section class="sec_view">
+        <div class="view_bottom">
+            <!-- <div class="next_content">
+                <div class="cont_left">
+                    <div class="view_no">▲ 다음글</div>
+                    <div class="view_post">다음 글이 없습니다.</div>
+                </div>
+                <div class="cont_right">
+                    <div class="view_date">ㅡ</div>
+                    <span class="pc_none">|</span>
+                    <div class="view_count">ㅡ</div>
+                </div>
+            </div>
+            <div class="post_content">
+                <div class="cont_left">
+                    <div class="view_no">▼ 이전글</div>
+                    <div class="view_post">서문야시장 ‘22년 3월 영업 공지</div>
+                </div>
+                <div class="cont_right">
+                    <div class="view_date">2022.02.28</div>
+                    <span class="pc_none">|</span>
+                    <div class="view_count">1641</div>
+                </div>
+            </div> -->
+            <div class="btn_move_wrap">
+                <a class="btn_move" onclick="javascript:location.href ='/updateMemo?id=<%=row.id%>'">수정</a>
+                <a class="btn_move" href="notice">목록</a>
+                <a class="btn_move" onclick="javascript:location.href ='/deleteMemo?id=<%=row.id%>'">삭제</a>
+            </div>
+            <div class="mobile_btn_top pc_none">
+                <a href="#"><img src="img/mobile/btn_top.png" alt="top"> TOP</a>
+            </div>
+        </div>
+    </section>

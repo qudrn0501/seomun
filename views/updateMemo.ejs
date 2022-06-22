@@ -1,0 +1,36 @@
+
+<section class="sec_write">
+    <h2>공지사항 작성 페이지</h2>
+    <% if(typeof errs !== 'undefined') { %>
+        <% errs.forEach((err) => { %>
+            <h3><%=err.param%> : <%=err.msg%></h3>
+        <%})%>
+    <%}%>
+    <form class="write_form" action="/updateMemo" method="POST">
+        <input type="hidden" name="id" value="<%=row.id%>">
+        <table>
+            <tr class="write_subject">
+                <td><label for="">제목</label></td>
+                <td colspan="4"><input type="text" name="subject" value="<%=row.subject%>"></td>
+            </tr>
+            <tr class="write_login">
+                <td><label for="">이름</label></td>
+                <td><input type="text" placeholder="관리자 ID" name="author" value="<%=row.author%>"></td>
+                <td><label for="">비밀번호</label></td>
+                <td><input type="password" placeholder="관리자 비밀번호 6자리" name="pw" value="<%=row.pw%>"></td>
+            </tr>
+            <tr class="write_content">
+                <td><label for="">내용 작성</label></td>
+                <td colspan="3"><textarea name="content" id="" cols="50" rows="30"><%=row.content%></textarea></td>
+            </tr>
+            <tr class="write_save">
+                <td><label for="">첨부파일</label></td>
+                <td><input type="file" multiple value="파일 첨부"></td>
+                <td colspan="2">
+                    <input type="submit" value="저장">
+                    <input type="button" value="back"  onclick="javascript:location.href='/notice'">
+                </td>
+            </tr>
+        </table>
+    </form>
+</section>

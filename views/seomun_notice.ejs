@@ -1,0 +1,70 @@
+
+        <div class="noticeback_img mobile_none"></div>
+        <section class="sec_notice">
+            <div class="notice_top">
+                <h1 class="mobile_none">공지사항</h1>
+                <div class="datepick_wrap">
+                    <div>
+                        <input type="text" name="" id="">
+                        <span class="icon_date"></span>
+                    </div>
+                    <span>-</span>
+                    <div>
+                        <input type="text" name="" id="">
+                        <span class="icon_date"></span>
+                    </div>
+                    <div class="search">
+                        <input type="text" name="" id="">
+                        <button></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec_notice">
+
+            <div class="notice_mid">
+                <ul>
+                    <li class="first_row">
+                        <div class="no">NO</div>
+                        <div class="noti_title">제목</div>
+                        <div class="date">작성일</div>
+                        <div class="view">조회수</div>
+                    </li>
+                    <% rows.forEach((row, index) => { %>
+                    <li>
+                        <a onclick="javascript:location.href='/viewdb?id=<%=row.id%>'">
+                            <div class="no"><%= row.RNUM%></div>
+                            <div class="post"><%= row.subject%></div>
+                            <div class="date"><%= row.date%></div>
+                            <span class="pc_none">|</span>
+                            <div class="view"><%= row.views%></div>
+                        </a>
+                    </li>
+                    <% }) %>
+                </ul>
+            </div>
+        </section>
+        <section class="sec_notice">
+            <div class="notice_bottom">
+                <div class="paging_area">
+                    <div class="paging">
+                        <ul>
+                            <li><a class="back_arrow" href=""></a></li>
+                            <li><a class="noti_active" href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">6</a></li>
+                            <li><a class="next_arrow" href=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="write_admin">
+                        <a href="write">글쓰기</a>
+                    </div>
+                </div>
+                <div class="mobile_btn_top pc_none">
+                    <a href="#"><img src="img/mobile/btn_top.png" alt="top"> TOP</a>
+                </div>
+            </div>
+        </section>

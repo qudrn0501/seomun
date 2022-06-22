@@ -1,0 +1,142 @@
+.sec_joincomp {
+  width: 86.6425992%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.joincomp_wrap {
+  width: 700px;
+  height: 787px;
+  margin: 200px auto 432px;
+  color: #ffffff;
+  text-align: center;
+}
+.joincomp_wrap>div {
+  width: 100%;
+  padding: 90px 120px;
+  box-sizing: border-box;
+  background-color: #191919;
+}
+.joincomp_wrap>div h2 {
+  font-size: 34px;
+  font-weight: 700;
+}
+.joincomp_wrap>div>div {
+  margin-top: 100px;
+}
+.joincomp_wrap>div span {
+  font-size: 16px;
+}
+
+.joincomp_wrap>div>form div {
+  margin-top: 20px;
+}
+.joincomp_wrap img {
+  margin-top: 50px;
+}
+.joincomp_wrap p {
+  font-size: 14px;
+  margin: 50px 0;
+}
+.joincomp_wrap .joincomp_login {
+  display: block;
+  width: 100%;
+  height: 80px;
+  background-color: #5223cb;
+  color: #fff;
+  font-size: 24px;
+  line-height: 80px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 50px;
+}
+
+.joincomp_bottom {
+  width: 100%;
+  margin-bottom: 230px;
+  margin-top: 30px;
+
+}
+
+.joincomp_bottom .mobile_btn_top {
+  display: none;
+}
+
+
+
+/*---------media queries----------*/
+/*---------max width 1480px----------*/
+@media screen and (max-width: 1480px) {
+  .sec_joincomp {
+      width: 86.6425992%;
+
+      box-sizing: border-box;
+  }
+}
+
+/*---------max width 1240px----------*/
+@media screen and (max-width: 1240px) {
+  .sec_joincomp {
+      width: 86.6425992%;
+      box-sizing: border-box;
+  }
+  
+}
+
+
+/*-----------max width 720px------------*/
+@media screen and (max-width: 720px) {
+  .mobile_none {
+      display: none;
+  }
+  .sec_joincomp {
+      width: 86.667%;
+      padding: 0;
+  }
+  .joincomp_wrap {
+    width: 100%;
+    height: 787px;
+    margin: 0px auto 432px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .joincomp_wrap>div {
+    width: 100%;
+    padding: 90px 80px;
+    box-sizing: border-box;
+    background-color: #191919;
+  }
+  .joincomp_wrap>div h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .joincomp_bottom {
+      width: 100%;
+      margin-top: 60px;
+      margin-bottom: 0px;
+  }
+
+
+  .joincomp_bottom .mobile_btn_top {
+      width: 100%;
+      display: flex;
+      justify-content:flex-end;
+      padding-bottom: 20px;
+      box-sizing: border-box;
+  }
+  .joincomp_bottom .mobile_btn_top>a {
+      width: 50px;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 20px;
+      color: #ffffff;
+  }
+  .joincomp_bottom .mobile_btn_top>a>img {
+      width: 15px;
+      height: 15px;
+  }
+
+
+}
+
