@@ -22,8 +22,8 @@ function getAllMemos(callback) {
 }
 
 //리스트에 새로운 내용을 추가하는 함수
-function insertMemo(subject, date, content, author, pw, callback) {
-    connection.query(`INSERT INTO notice(subject, date, content, author, pw) VALUES('${subject}', NOW(), '${content}', '${author}', '${pw}')`, (err, result) => {
+function insertMemo(subject, date, content, author, pw, views callback) {
+    connection.query(`INSERT INTO notice(subject, date, content, author, pw, views) VALUES('${subject}', NOW(), '${content}', '${author}', '${pw}', '${views}')`, (err, result) => {
         if (err) throw err;
         callback();
     });
