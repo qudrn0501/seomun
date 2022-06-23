@@ -26,6 +26,7 @@ router.post('/store', [check('subject').isByteLength({ min: 1, max: 5000 })],
       let content = param['content'];
       let author = param['author'];
       let pw = param['pw'];
+      let views = param['views'];
       db.insertMemo(subject, date, content, author, pw, views, () => {
         res.redirect('/notice');
       });
