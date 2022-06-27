@@ -148,11 +148,11 @@ main>.noticeback_img {
     width: 6.45%;
 }
 .noti_title {
-    width: 76.53%;
+    width: 70.53%;
 }
 
 .notice_mid>ul>li>a>.post {
-    width: 76.53%;
+    width: 70.53%;
     text-align: left;
     padding-left: 8.47%;
     box-sizing: border-box;
@@ -161,7 +161,7 @@ main>.noticeback_img {
     white-space: nowrap;
 }
 .date { 
-    width: 8.54%;
+    width: 14.54%;
 }
 .view {
     width: 8.48%;
