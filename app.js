@@ -9,7 +9,7 @@ const port = 3000;
 const homes = require('./routes/route.js');
 
 // heroku 꺼지지 않게 하는 구문 or kaffeine.herokuapp.com을 사용
-const http = this.require('https');
+const http = require('https');
 
 setInterval(function () {
   http.get("https://seomunnightmarket.herokuapp.com/")
