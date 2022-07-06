@@ -99,6 +99,19 @@
   display: none;
 }
 
+.kakao_login {
+  width: 100%;
+  height: 45px;
+  background-color: #f9e000;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 6px;
+  line-height: 45px;
+  cursor: pointer;
+}
+
 
 
 /*---------media queries----------*/
@@ -160,6 +173,7 @@
       width: 15px;
       height: 15px;
   }
+  
 
 
 }
