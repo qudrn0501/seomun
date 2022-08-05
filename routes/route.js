@@ -5,9 +5,13 @@ const { check, validationResult } = require('express-validator');
 
 router.use(expressLayouts);
 //route, routing 파일과 경로를 지정
+//서문시장야시장 메인페이지 지정
 router.get('/', (req, res) => {
-  res.render('seomun_main');
-}); //서문시장야시장 메인페이지 지정
+
+  db.getAllMemos((rows) => {
+    res.render('seomun_main', { rows: rows })
+  });
+});
 
 const db = require('./../db');
 
@@ -83,7 +87,7 @@ router.get('/main', (req, res) => {
 
   db.getAllMemos((rows) => {
     res.render('seomun_main', { rows: rows })
-  })
+  });
 })
 
 router.get('/intro', (req, res) => {
