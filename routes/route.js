@@ -80,7 +80,10 @@ router.get('/deleteMemo', (req, res) => {
 
 
 router.get('/main', (req, res) => {
-  res.render('seomun_main');
+
+  db.getAllMemos((rows) => {
+    res.render('seomun_main', { rows: rows })
+  })
 })
 
 router.get('/intro', (req, res) => {

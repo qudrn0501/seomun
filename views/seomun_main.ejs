@@ -76,25 +76,17 @@
                     <h6>야시장 공지</h6>
                 </div>
                 <div class="info_content info_notice">
-                    <div class="noti_title">
-                        <a href="view"><p>서문-칠성야시장 매대운영자 모집공고</p></a>
-                        <a href=""><p>서문야시장 ‘22년 3월 영업 공지</p></a>
-                        <a href=""><p>설 명절 특별 이벤트 진행</p></a>
-                        <a href=""><p>서문야시장 ‘22년 설 연휴 기간 영업 공지</p></a>
-                        <a href=""><p>서문야시장 동계영업 시간 공지</p></a>
-                        <a href=""><p>제 4회 서문가요제 결승전 개최</p></a>
-                        <a href=""><p>2021 야시장 매대 운영자 모집 식품분야 품평회 심사 대상 
-                            명단 발표 및 품평회 설명 자료 게시</p></a>
+                    <% rows.forEach((row, index) => { %>
+                    <div class="mainnoti_title">
+                        <a onclick="javascript:location.href='/viewdb?id=<%=row.id%>'">
+                            <p><%= row.subject%></p>
+                            <p class="mainnoti_date"><%= row.date%></p>
+                        </a>
                     </div>
-                    <div class="noti_date">
-                        <p>22-03-24</p>
-                        <p>22-02-28</p>
-                        <p>22-01-28</p>
-                        <p>22-01-24</p>
-                        <p>22-01-03</p>
-                        <p>21-12-17</p>
-                        <p>21-11-02</p>
-                    </div>
+                    <!-- <div class="noti_date">
+                        <p><%= row.date%></p>
+                    </div> -->
+                    <% }) %>
                 </div>
             </li>
             <li class="mobile_none">

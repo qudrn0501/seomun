@@ -265,37 +265,30 @@ section {
 }
 .info_notice {
     display: flex;
+    flex-direction: column;
+}
+.mainnoti_title {
+    width: 100%;
+}
+.mainnoti_title a {
+    display: flex;
     justify-content: space-between;
-}
-.noti_title {
-    width: 75%;
-    
-}
-.noti_title a {
-    display: block;
     margin-bottom: 24.5px;
+    width: 100%;
 }
-.noti_title a>p {
+.mainnoti_title a p {
     color: #fff;
     font-size: 14px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-.info_notice p {
-    margin-bottom: 24.5px;
+    cursor: pointer;
 }
 .info_notice p:last-child {
     margin-bottom: 0;
 }
-.noti_date {
-    width: 65px;
-    color: #f25785;
-    font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: 20px;
+.mainnoti_date {
+    color: #f25785 !important;
 }
 .info_time {
     color: #fff;
