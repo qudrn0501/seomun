@@ -1,7 +1,7 @@
 //const { Result } = require('express-validator');
 const mysql = require('mysql');
 
-const connection = mysql.createConnection({
+const connection = mysql.createPool({
     host: 'us-cdbr-east-05.cleardb.net',
     user: 'bc360cea988749',
     password: '4b6e91f9',
