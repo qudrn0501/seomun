@@ -13,7 +13,7 @@ const http = require('https');
 
 setInterval(function () {
   http.get("https://seomunnightmarket.herokuapp.com/")
-}, 600000);
+}, 60000);
 
 
 
